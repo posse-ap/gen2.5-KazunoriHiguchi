@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POSSE WEB APP</title>
+  <link rel="stylesheet" href="app.css" />
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- header -->
+
+  <header>
+    <div class="box">
+      <div>
+      <img src="S__12976189.jpg" class="posse">4th week
+      </div>
+      <button id="record" class="record">
+        記録・投稿
+      </button>
+    </div>
+  </header>
+
+  <!-- <div id="open">
+    詳細を見る
+  </div> -->
+
+  <!-- modal -->
+
+
+  <div id="mask" class="hidden"></div>
+
+
+  <section id="modal" class="hidden">
+    <div class="container">
+      <div class="item">
+        <div class="studyDays">
+          <h2>学習日</h2>
+          <input type="date"></input>
+        </div>
+          <h2>学習コンテンツ</h2>
+        <div class="contents">
+          <div class="items">
+            <i class="fa-solid fa-circle-check"></i>
+            <input type="checkbox" id="" name="">N予備校
+          </div>
+          <div class="items">
+            <i class="fa-solid fa-circle-check"></i>
+            <input type="checkbox" id="" name="">ドットインストール
+          </div>
+          <div class="items">
+            <i class="fa-solid fa-circle-check"></i>
+            <input type="checkbox" id="" name="">POSSE課題
+          </div>
+        </div>
+            <h2>学習言語</h2>
+        <div class="languages">
+          <div class="items">
+            <i class="fa-solid fa-circle-check"></i>
+            <input type="checkbox" id="" name="">HTML
+          </div>
+          <div class="items">
+            <i class="fa-solid fa-circle-check"></i>
+            <input type="checkbox" id="" name="">CSS
+          </div>
+          <div class="items">
+            <i class="fa-solid fa-circle-check"></i>
+            <input type="checkbox" id="" name="">JavaScript
+          </div>
+          <div class="items">
+            <i class="fa-solid fa-circle-check"></i>
+            <input type="checkbox" id="" name="">PHP
+          </div>
+          <div class="items">
+            <i class="fa-solid fa-circle-check"></i>
+            <input type="checkbox" id="" name="">Laravel
+          </div>
+          <div class="items">
+            <i class="fa-solid fa-circle-check"></i>
+            <input type="checkbox" id="" name="">SQL
+          </div>
+          <div class="items">
+            <i class="fa-solid fa-circle-check"></i>
+            <input type="checkbox" id="" name="">SHELL
+          </div>
+          <div class="items">
+            <i class="fa-solid fa-circle-check"></i>
+            <input type="checkbox" id="" name="">情報システム基礎知識（その他）
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="studyTimes">
+          <h2>学習時間</h2>
+          <label>
+            <textarea name="studyTimes" rows="1" class="textarea-large1"></textarea>
+          </label>
+        </div>
+        <Twitter用コメント class="twitterComments">
+          <h2>Twitter用コメント</h2>
+          <label>
+            <textarea name="TwitterComments" class="textarea-large2"></textarea>
+          </label>
+          <i class="fa-solid fa-circle-check"></i>
+          <input type="checkbox" id="" name="">Twitterに自動投稿する
+        </div>
+      </div>
+    </div>
+    <div class="cancel-modal" id="cancel-modal">×</div>
+    <div id="close">記録・投稿</div>
+  </section>
+
+  <!-- ローディング画面 -->
+
+  <div id="loading" class="loading hidden">
+    <div id="cancel-loading" class="cancel-loading">×</div>
+  </div>
+
+<!-- 完了画面   -->
+
+  <div id="finish" class="finish hidden">
+    <p class="awesome">AWESOME!</p>
+    <p class="checkmark002"><br></p>
+    <p>記録・投稿<br>
+      完了しました
+    </p>
+    <div id="cancel-finish" class="cancel-finish">×</div>
+  </div>
+
+
+  <!-- main -->
+
+  <div class="main">
+    <div class="list1">
+      <div class="left1">
+        <div class="three">
+          today<br>
+          3<br>
+          hour<br>
+        </div>
+        <div class="three">
+          month<br>
+          120<br>
+          hour<br>
+        </div>
+        <div class="three">
+          total<br>
+          1348<br>
+          hour<br>
+        </div>
+      </div>
+      <div class="graph">graph</div>
+    </div>
+    <div class="list2">
+      <div class="lists">学習言語</div>
+      <div class="lists">学習コンテンツ</div>
+    </div>
+  </div>
+  
+
+
+
+  <!-- footer -->
+
+  <footer id="footer" class="footer">
+    <p class="day">2022年 2月</p>
+  </footer>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
